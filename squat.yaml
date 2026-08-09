@@ -1,0 +1,12 @@
+name: Squat
+
+states:
+  UP:
+    knee_angle: ">160"
+
+  DOWN:
+    knee_angle: "<90"
+
+rep:
+  start: UP
+  end: DOWN

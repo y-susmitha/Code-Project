@@ -1,0 +1,40 @@
+name: Bicep Curl
+
+exercise_type: upper_body
+
+joint: elbow
+
+side: right
+
+landmarks:
+  shoulder: 12
+  elbow: 14
+  wrist: 16
+
+thresholds:
+  down_angle: 165
+  up_angle: 45
+
+states:
+  DOWN:
+    angle: ">165"
+
+  UP:
+    angle: "<45"
+
+rep:
+  start: DOWN
+  end: UP
+
+feedback:
+  DOWN:
+    message: "Lower Completely"
+
+  UP:
+    message: "Excellent Curl"
+
+  TOO_FAST:
+    message: "Slow Down"
+
+  TOO_SLOW:
+    message: "Lift Smoothly"

@@ -1,0 +1,40 @@
+name: Push Up
+
+exercise_type: upper_body
+
+joint: elbow
+
+side: left
+
+landmarks:
+  shoulder: 11
+  elbow: 13
+  wrist: 15
+
+thresholds:
+  up_angle: 165
+  down_angle: 80
+
+states:
+  UP:
+    angle: ">165"
+
+  DOWN:
+    angle: "<80"
+
+rep:
+  start: UP
+  end: DOWN
+
+feedback:
+  UP:
+    message: "Arms Fully Extended"
+
+  DOWN:
+    message: "Good Depth"
+
+  TOO_HIGH:
+    message: "Go Lower"
+
+  TOO_LOW:
+    message: "Do Not Over Bend"
